@@ -1,0 +1,35 @@
+:root {
+    --orange-5: hsl(20, 100%, 100%);
+    --orange-10: hsl(20, 100%, 90%);
+    --orange-50: hsl(20, 100%, 85%);
+    --orange-100: hsl(20, 100%, 70%);
+    --orange-200: hsl(20, 100%, 60%);
+    --orange-300: hsl(20, 100%, 50%);
+    --orange-400: hsl(20, 100%, 45%);
+    --orange-500: hsl(20, 100%, 35%);
+    --orange-600: hsl(20, 100%, 25%);
+    --orange-700: hsl(20, 100%, 15%);
+    --orange-800: hsl(20, 100%, 10 %);
+    --orange-900: hsl(20, 100%, 5%);
+    --orange-1000: hsl(20, 100%, 2.5%);
+    --orange-1000-25: hsl(20, 100%, 2.5%, 25%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--orange-400);
+    background-image: url(/img/pizzaria\ de\ fundo.png);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: 200px 0px;
+
+}
+
+header{
+    background-color: red;
+}
