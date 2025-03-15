@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 :root {
     --orange-5: hsl(20, 100%, 100%);
     --orange-10: hsl(20, 100%, 90%);
@@ -9,10 +16,12 @@
     --orange-500: hsl(20, 100%, 35%);
     --orange-600: hsl(20, 100%, 25%);
     --orange-700: hsl(20, 100%, 15%);
-    --orange-800: hsl(20, 100%, 10 %);
+    --orange-800: hsl(20, 100%, 10%);
     --orange-900: hsl(20, 100%, 5%);
     --orange-1000: hsl(20, 100%, 2.5%);
     --orange-1000-25: hsl(20, 100%, 2.5%, 25%);
+
+    --yellow-50: hsl(60, 100%, 50%);
 }
 
 * {
@@ -21,15 +30,142 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 body {
-    background-color: var(--orange-400);
+    background-color: var(--orange-300);
     background-image: url(/img/pizzaria\ de\ fundo.png);
     background-repeat: no-repeat;
-    background-size: 65%;
-    background-position: 200px 0px;
+    background-size: 75%;
+    background-position: 100px 5%;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    right: 7.6%;
+    top: 3%;
+    z-index: 2;
+}
+
+.header__list {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+
+.header__link {
+    font-size: 20px;
+    color: var(--orange-700);
+}
+
+.header__link:hover {
+    color: var(--orange-1000);
+}
+
+/* conteudo pricipal */
+
+.main__content {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    background-image: url(/img/pizza.png);
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: 88% 100%;
+    border-radius: 20px;
+    margin: 60px auto;
+    max-width: 75%;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    min-height: 80vh;
+    z-index: 1;
+}
+
+.content {
+    text-align: center;
+    padding-top: 12px;
+    font-family: "Kaushan Script", cursive;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.content__text {
+    display: grid;
+    gap: 8px;
+    align-content: center;
+    justify-items: start;
+    justify-content: start;
+}
+
+.content__text h2 {
+    padding-left: 35%;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    color: var(--orange-800);
 
 }
 
-header{
-    background-color: red;
+.content__text h3 {
+    padding-top: 10px;
+    padding-left: 35%;
+    white-space: nowrap;
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    font-size: 35px;
+
+}
+
+.content__text p {
+    padding-top: 40px;
+    padding-left: 35%;
+    white-space: nowrap;
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.content__text::before {
+    content: "";
+    position: absolute;
+    left: 90px;
+    top: 60px;
+    width: 10px;
+    height: 45%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* button */
+
+.content__button {
+    display: flex;
+    gap: 20px;
+    padding-left: 20%;
+    padding-top: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.button__link {
+    border-radius: 5px;
+    background-color: var(--orange-10);
+    color: var(--orange-800);
+    padding: 5px 15px;
+}
+
+.brown {
+    background-color: #BB5E2C;
+    color: var(--orange-10);
 }
